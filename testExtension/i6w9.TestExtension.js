@@ -12,6 +12,8 @@
 	  this.element = $(element);
 	  this.id = this.element.id || null;
 	  this.setOptions(options);
+	  var B = i6w9.UI.Behavior, behaviors = [B.Hover, B.Focus, B.Down];
+	  i6w9.UI.addBehavior(this.element, behaviors);
     }
   });
 

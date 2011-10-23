@@ -8,9 +8,16 @@
     <script src="string.js"></script>
     <script src="i6w9.js"></script>
     <script src="i6w9.core.js"></script>
-    <script src="Core/options.js"></script>
-    <script src="Core/testCoreModule.js"></script>
-    <script src="i6w9.TestExtension.js"></script>
+    <script src="i6w9.ui.js"></script>
+    <script src="core/options.js"></script>
+    <script src="core/testCoreModule.js"></script>
+    <script src="ui/behaviors.js"></script>
+    <script src="ui/behaviors/down.js"></script>
+    <script src="ui/behaviors/drag.js"></script>
+    <script src="ui/behaviors/focus.js"></script>
+    <script src="ui/behaviors/hover.js"></script>
+    <script src="ui/behaviors/resize.js"></script>
+    <script src="testExtension/i6w9.TestExtension.js"></script>
     <script type="text/javascript">
     document.observe('dom:loaded', function() {
       console.debug('dom:loaded');
@@ -25,7 +32,7 @@
 
 <body>
 
-  <div id="foobar">foobar</div>
+  <input type="text" id="foobar" value="blub" />
 
 </body>
 
