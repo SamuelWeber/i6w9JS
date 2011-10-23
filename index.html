@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+    <script src="lib/prototype.js"></script>
+    <script src="array.js"></script>
+    <script src="string.js"></script>
+    <script src="i6w9.js"></script>
+    <script src="i6w9.core.js"></script>
+    <script src="Core/options.js"></script>
+    <script src="Core/testCoreModule.js"></script>
+    <script src="i6w9.TestExtension.js"></script>
+    <script type="text/javascript">
+    document.observe('dom:loaded', function() {
+      console.debug('dom:loaded');
+      var foobar = new i6w9.TestExtension('foobar', {
+        'foo':'bar',
+        'bat':'baz'
+      });
+      console.debug(foobar);
+    });
+    </script>
+</head>
+
+<body>
+
+  <div id="foobar">foobar</div>
+
+</body>
+
+</html>

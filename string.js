@@ -23,7 +23,7 @@ Object.extend(String.prototype, {
    */
   excerpt: function(intMaxChars) {
 	if(this.length > intMaxChars)
-	  return this.substr(0, intMaxChars) . '...';
+	  return this.substr(0, intMaxChars) + '...';
     return this;
   }
 });
