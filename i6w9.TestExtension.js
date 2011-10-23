@@ -9,7 +9,6 @@
     i6w9.Core.TestCoreModule, {
 	NAME: 'i6w9.TestExtension',
 	initialize: function(element, options) {
-    	console.debug('foo',this);
 	  this.element = $(element);
 	  this.id = this.element.id || null;
 	  this.setOptions(options);
